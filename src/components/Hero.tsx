@@ -11,16 +11,16 @@ export const Hero = () => {
 
   const products = [
     {
-      name: "Premium Whiskey",
+      name: "Премиум Пилснер",
       image: "/lovable-uploads/d7ff8b91-8d4f-484c-b95c-8d13a67f361d.png",
-      price: "$99.99",
-      description: "Aged to perfection"
+      price: "$7.99",
+      description: "Классический чешский вкус"
     },
     {
-      name: "Classic Bourbon",
+      name: "Тёмный Лагер",
       image: "/lovable-uploads/34befac8-ca41-4fa1-8153-d63903be83bb.png",
-      price: "$89.99",
-      description: "Rich and smooth"
+      price: "$8.99",
+      description: "Богатый и насыщенный"
     }
   ];
 
@@ -36,21 +36,21 @@ export const Hero = () => {
           "inline-block text-sm font-medium text-golden mb-4 tracking-wider opacity-0",
           isVisible && "animate-fadeIn [animation-delay:0.2s]"
         )}>
-          PREMIUM COLLECTION
+          ПРЕМИАЛЬНАЯ КОЛЛЕКЦИЯ
         </span>
         
         <h1 className={cn(
           "text-4xl md:text-6xl font-bold text-white mb-6 opacity-0",
           isVisible && "animate-fadeIn [animation-delay:0.4s]"
         )}>
-          Discover Luxury Spirits
+          Злата Прага
         </h1>
         
         <p className={cn(
           "max-w-2xl mx-auto text-lg text-gray-400 mb-12 opacity-0",
           isVisible && "animate-fadeIn [animation-delay:0.6s]"
         )}>
-          Experience the finest selection of premium spirits, carefully curated for the most discerning tastes.
+          Откройте для себя изысканную коллекцию премиального чешского пива, созданного с вековыми традициями.
         </p>
         
         <div className={cn(
