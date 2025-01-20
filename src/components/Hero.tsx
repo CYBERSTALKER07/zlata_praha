@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import { ProductCard } from "./ProductCard";
 
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -8,42 +9,57 @@ export const Hero = () => {
     setIsVisible(true);
   }, []);
 
+  const products = [
+    {
+      name: "Premium Whiskey",
+      image: "/lovable-uploads/d7ff8b91-8d4f-484c-b95c-8d13a67f361d.png",
+      price: "$99.99",
+      description: "Aged to perfection"
+    },
+    {
+      name: "Classic Bourbon",
+      image: "/lovable-uploads/34befac8-ca41-4fa1-8153-d63903be83bb.png",
+      price: "$89.99",
+      description: "Rich and smooth"
+    }
+  ];
+
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-50 to-gray-100">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-darkBg">
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px)] bg-[size:40px] bg-[position:center] mix-blend-overlay" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:40px] bg-[position:center] mix-blend-overlay" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#D4AF3733_1px,transparent_1px)] bg-[size:40px] bg-[position:center] mix-blend-overlay" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,#D4AF3733_1px,transparent_1px)] bg-[size:40px] bg-[position:center] mix-blend-overlay" />
       </div>
       
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <span className={cn(
-          "inline-block text-sm font-medium text-gray-600 mb-4 tracking-wider opacity-0",
+          "inline-block text-sm font-medium text-golden mb-4 tracking-wider opacity-0",
           isVisible && "animate-fadeIn [animation-delay:0.2s]"
         )}>
-          WELCOME TO THE FUTURE
+          PREMIUM COLLECTION
         </span>
         
         <h1 className={cn(
-          "text-4xl md:text-6xl font-bold text-gray-900 mb-6 opacity-0",
+          "text-4xl md:text-6xl font-bold text-white mb-6 opacity-0",
           isVisible && "animate-fadeIn [animation-delay:0.4s]"
         )}>
-          Create Something Amazing
+          Discover Luxury Spirits
         </h1>
         
         <p className={cn(
-          "max-w-2xl mx-auto text-lg text-gray-600 mb-8 opacity-0",
+          "max-w-2xl mx-auto text-lg text-gray-400 mb-12 opacity-0",
           isVisible && "animate-fadeIn [animation-delay:0.6s]"
         )}>
-          Experience the perfect blend of design and functionality. Build something extraordinary with our cutting-edge platform.
+          Experience the finest selection of premium spirits, carefully curated for the most discerning tastes.
         </p>
         
         <div className={cn(
-          "opacity-0",
+          "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 opacity-0",
           isVisible && "animate-fadeIn [animation-delay:0.8s]"
         )}>
-          <button className="px-8 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-            Get Started
-          </button>
+          {products.map((product, index) => (
+            <ProductCard key={index} {...product} />
+          ))}
         </div>
       </div>
     </div>
