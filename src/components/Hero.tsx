@@ -32,6 +32,12 @@ export const Hero = () => {
       </div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+        <img 
+          src="/lovable-uploads/aea943cc-456f-4ae5-aee5-06ef77efb8e7.png"
+          alt="Zlata Praha"
+          className="w-64 h-64 mx-auto mb-12 animate-float"
+        />
+        
         <span className={cn(
           "inline-block text-sm font-medium text-golden mb-4 tracking-wider opacity-0",
           isVisible && "animate-fadeIn [animation-delay:0.2s]"
