@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import { ProductCard } from "./ProductCard";
 
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -7,6 +8,21 @@ export const Hero = () => {
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
+  const products = [
+    {
+      name: "Премиум Пилснер",
+      image: "/lovable-uploads/d7ff8b91-8d4f-484c-b95c-8d13a67f361d.png",
+      price: "$7.99",
+      description: "Классический чешский вкус"
+    },
+    {
+      name: "Тёмный Лагер",
+      image: "/lovable-uploads/34befac8-ca41-4fa1-8153-d63903be83bb.png",
+      price: "$8.99",
+      description: "Богатый и насыщенный"
+    }
+  ];
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-darkBg">
@@ -36,6 +52,15 @@ export const Hero = () => {
         )}>
           Откройте для себя изысканную коллекцию премиального чешского пива, созданного с вековыми традициями.
         </p>
+        
+        <div className={cn(
+          "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 opacity-0",
+          isVisible && "animate-fadeIn [animation-delay:0.8s]"
+        )}>
+          {products.map((product, index) => (
+            <ProductCard key={index} {...product} />
+          ))}
+        </div>
       </div>
     </div>
   );
