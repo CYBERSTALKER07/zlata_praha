@@ -1,4 +1,3 @@
-import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { BestSellers } from "@/components/BestSellers";
 import { Story } from "@/components/Story";
@@ -11,7 +10,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-darkBg">
       <SplashScreen />
-      <Navigation />
       <Hero />
       <BestSellers />
       <Story />
