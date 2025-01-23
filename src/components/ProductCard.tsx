@@ -14,8 +14,8 @@ export const ProductCard = ({
   description
 }: ProductCardProps) => {
   return (
-    <div className="product-card">
-      <div className="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+    <div className="product-card hover-lift">
+      <div className="relative aspect-[3/4] overflow-hidden mb-4" style={{ borderRadius: '50px 0 50px 0' }}>
         <img
           src={image}
           alt={name}
