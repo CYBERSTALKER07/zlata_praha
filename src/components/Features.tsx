@@ -5,18 +5,18 @@ import { Zap, Shield, Star } from "lucide-react";
 const features = [
   {
     icon: Zap,
-    title: "Молниеносная Скорость",
-    description: "Испытайте невероятную скорость и производительность нашей платформы."
+    title: "Lightning Fast",
+    description: "Experience incredible speed and performance with our optimized platform."
   },
   {
     icon: Shield,
-    title: "Безопасность в Основе",
-    description: "Создано с учетом безопасности, гарантируя защиту ваших данных."
+    title: "Secure by Design",
+    description: "Built with security in mind, ensuring your data is always protected."
   },
   {
     icon: Star,
-    title: "Премиум Качество",
-    description: "Наслаждайтесь первоклассными функциями, превосходящими ожидания."
+    title: "Premium Quality",
+    description: "Enjoy top-tier features and functionality that exceed expectations."
   }
 ];
 
@@ -50,10 +50,10 @@ export const Features = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-            Почему Выбирают Нас
+            Why Choose Us
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Откройте для себя, что делает нашу платформу уникальной
+            Discover what makes our platform unique
           </p>
         </div>
 
