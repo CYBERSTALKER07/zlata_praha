@@ -15,7 +15,7 @@ export const Craftsmanship = () => {
             </div>
             <div className="relative aspect-square">
               <img 
-                src="/lovable-uploads/d7ff8b91-8d4f-484c-b95c-8d13a67f361d.png"
+                src="/lovable-uploads/a048cf85-697d-4a5c-a6af-37e34615f7b3.png"
                 alt="Процесс пивоварения"
                 className="rounded-lg object-cover w-full h-full"
               />

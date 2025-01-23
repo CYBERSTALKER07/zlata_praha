@@ -16,8 +16,8 @@ const SplashScreen = () => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-darkBg animate-fade-in">
       <div className="text-center">
-        <h1 className="text-6xl font-bold text-golden mb-4 animate-scale-in">
-          Zlata Praha
+        <h1 className="text-6xl font-bold rounded-xl text-golden mb-4 animate-scale-in">
+          <img className="rounded-[20%]" src="..//..//public/lovable-uploads/image.png" alt="" />
         </h1>
         <div className="w-16 h-16 border-4 border-golden border-t-transparent rounded-full animate-spin mx-auto" />
       </div>

@@ -46,7 +46,7 @@ export const Hero = () => {
           <img 
             src="/lovable-uploads/8790bde9-715c-451b-9619-1726b04249c4.png"
             alt="Golden Splash"
-            className="w-full h-auto object-contain animate-float"
+            className="w-full rounded-3xl h-auto object-contain animate-float"
           />
         </div>
       </div>

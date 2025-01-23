@@ -7,7 +7,7 @@ export const Heritage = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-square">
               <img 
-                src="/lovable-uploads/34befac8-ca41-4fa1-8153-d63903be83bb.png"
+                src="/lovable-uploads/cff69c7c-241d-44e7-8ba3-0393505e4ac1.png"
                 alt="Традиционное производство"
                 className="rounded-lg object-cover w-full h-full"
               />
