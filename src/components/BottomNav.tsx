@@ -21,7 +21,7 @@ export const BottomNav = () => {
             )}
           >
             <Home size={24} />
-            <span className="text-xs">Home</span>
+            <span className="text-xs">Главная</span>
           </Link>
           
           <Link
@@ -34,7 +34,7 @@ export const BottomNav = () => {
             )}
           >
             <ShoppingBag size={24} />
-            <span className="text-xs">Shop</span>
+            <span className="text-xs">Магазин</span>
           </Link>
 
           <Link
@@ -47,7 +47,7 @@ export const BottomNav = () => {
             )}
           >
             <Mail size={24} />
-            <span className="text-xs">Contact</span>
+            <span className="text-xs">Контакты</span>
           </Link>
         </div>
       </div>
