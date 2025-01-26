@@ -1,15 +1,37 @@
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
+
+  const bestProducts = [
+    {
+      name: "Злата Прага Премиум",
+      image: "/lovable-uploads/33e66d6a-f443-4d74-891f-7ac706802738.png",
+    },
+    {
+      name: "Злата Прага Тёмное",
+      image: "/lovable-uploads/34befac8-ca41-4fa1-8153-d63903be83bb.png",
+    },
+    {
+      name: "Злата Прага Светлое",
+      image: "/lovable-uploads/7c91b3cb-2446-412e-a501-418abc1954bb.png",
+    },
+  ];
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-darkBg">
+    <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-darkBg">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#D4AF3733_1px,transparent_1px)] bg-[size:40px] bg-[position:center] mix-blend-overlay" />
         <div className="absolute inset-0 bg-[linear-gradient(to_bottom,#D4AF3733_1px,transparent_1px)] bg-[size:40px] bg-[position:center] mix-blend-overlay" />
@@ -49,6 +71,37 @@ export const Hero = () => {
             className="w-full rounded-3xl h-auto object-contain animate-float"
           />
         </div>
+      </div>
+
+      <div className={cn(
+        "w-full max-w-5xl px-4 opacity-0",
+        isVisible && "animate-fadeIn [animation-delay:1s]"
+      )}>
+        <h2 className="text-2xl md:text-3xl font-bold text-golden mb-8 text-center">
+          Лучшие Сорта
+        </h2>
+        <Carousel className="w-full">
+          <CarouselContent>
+            {bestProducts.map((product, index) => (
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <div className="p-4">
+                  <div className="relative aspect-square overflow-hidden rounded-[50px_0_50px_0]">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
+                    />
+                  </div>
+                  <h3 className="text-golden font-semibold text-lg mt-4 text-center">
+                    {product.name}
+                  </h3>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex" />
+          <CarouselNext className="hidden md:flex" />
+        </Carousel>
       </div>
     </div>
   );
