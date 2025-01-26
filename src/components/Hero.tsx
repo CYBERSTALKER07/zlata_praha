@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import {
@@ -18,7 +19,8 @@ export const Hero = () => {
     },
     {
       name: "Злата Прага Тёмное",
-      image: "/lovable-uploads/34befac8-ca41-4fa1-8153-d63903be83bb.png",
+      image: "/lovable-uploads/aea943cc-456f-4ae5-aee5-06ef77efb8e7.png",
+
     },
     {
       name: "Злата Прага Светлое",
