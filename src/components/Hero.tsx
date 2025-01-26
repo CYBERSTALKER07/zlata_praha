@@ -26,39 +26,12 @@ export const Hero = () => {
     },
   ];
 
-  const floatingImages = [
-    "/lovable-uploads/33e66d6a-f443-4d74-891f-7ac706802738.png",
-    "/lovable-uploads/34befac8-ca41-4fa1-8153-d63903be83bb.png",
-    "/lovable-uploads/7c91b3cb-2446-412e-a501-418abc1954bb.png",
-    "/lovable-uploads/8790bde9-715c-451b-9619-1726b04249c4.png",
-    "/lovable-uploads/a048cf85-697d-4a5c-a6af-37e34615f7b3.png",
-  ];
-
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-darkBg">
-      {/* Floating Beer Images */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {floatingImages.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt="Floating Beer"
-            className={cn(
-              "absolute w-24 md:w-32 opacity-20 animate-float",
-              index === 0 && "top-[10%] left-[10%] [animation-delay:0s]",
-              index === 1 && "top-[20%] right-[15%] [animation-delay:1.1s]",
-              index === 2 && "bottom-[30%] left-[20%] [animation-delay:2.2s]",
-              index === 3 && "top-[40%] right-[25%] [animation-delay:3.3s]",
-              index === 4 && "bottom-[15%] right-[10%] [animation-delay:4.4s]"
-            )}
-          />
-        ))}
-      </div>
-
       {/* Neon Grid Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(45deg,#D4AF3722_1px,transparent_1px)] bg-[size:30px_30px] bg-[position:center] mix-blend-overlay" />
