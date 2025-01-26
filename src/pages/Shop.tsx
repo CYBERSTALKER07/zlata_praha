@@ -54,6 +54,24 @@ const products = [
     image: "/lovable-uploads/9ab96122-2703-418d-a9c2-d00b213ba9b9.png",
     price: "€6.99",
     description: "Limited Edition Prague Collection"
+  },
+  {
+    name: "Zlata Praha Rift",
+    image: "/lovable-uploads/6ec13245-7810-49c2-b0d7-6d84bd498527.png",
+    price: "€6.99",
+    description: "Fruit-Infused Special Edition"
+  },
+  {
+    name: "Zlata Praha Collection",
+    image: "/lovable-uploads/8d132d6c-4416-408e-90dd-06e466725c0f.png",
+    price: "€24.99",
+    description: "Premium Beer Collection Set"
+  },
+  {
+    name: "Zlata Praha Classic",
+    image: "/lovable-uploads/a86b0122-b5cf-494a-8d7b-75f294f0450c.png",
+    price: "€4.99",
+    description: "Classic Czech Beer"
   }
 ];
 
