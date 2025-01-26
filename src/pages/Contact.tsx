@@ -14,7 +14,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-darkBg">
-      <Navigation />
+      {/* <Navigation /> */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-24">
         <h2 className="text-2xl sm:text-3xl font-bold text-golden mb-8 sm:mb-12 text-center animate-fadeIn">
           Контактная Информация
@@ -57,11 +57,11 @@ const Contact = () => {
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
-          <div className="text-gray-300">
+          {/* <div className="text-gray-300">
             <p className="text-lg sm:text-xl mb-2 sm:mb-4">Адрес:</p>
             <p className="text-base sm:text-lg">ул. Пивоваров, 1</p>
             <p className="text-base sm:text-lg">Прага, Чехия</p>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex justify-center gap-6 sm:gap-8 mt-8 sm:mt-12 animate-slideIn">
