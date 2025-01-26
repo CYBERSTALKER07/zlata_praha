@@ -1,79 +1,92 @@
 import { ProductCard } from "@/components/ProductCard";
-
 const products = [
   {
     name: "Zlata Praha Premium",
-    image: "/lovable-uploads/fb766ddb-6cc9-46d1-b576-0e81efd8cef3.png",
-    price: "€4.99",
-    description: "Classic Czech Pilsner"
+    image: "/lovable-uploads/photo_2_2025-01-26_15-56-11.jpg",
+    price: "13 000 so'm",
+    description: "Легкое пиво с яблочным вкусом"
   },
   {
     name: "Zlata Praha Gold",
-    image: "/lovable-uploads/bd89be56-b5aa-4f43-a913-d1f854b34c27.png",
-    price: "€5.99",
-    description: "Premium Gold Lager with Fruit Notes"
+    image: "/lovable-uploads/photo_4_2025-01-26_15-56-11.jpg",
+    price: "13 000 so'm",
+    description: "Особое издание с вишневым вкусом"
   },
   {
     name: "Zlata Praha Cherry",
-    image: "/lovable-uploads/66e24078-2693-4560-8001-8f39b851af7f.png",
-    price: "€6.49",
-    description: "Cherry-Flavored Special Edition"
+    image: "/lovable-uploads/photo_9_2025-01-26_15-56-11.jpg",
+    price: "12 200 so'm",
+    description: "Самарканд"
   },
   {
     name: "Zlata Praha Dark",
-    image: "/lovable-uploads/6d822156-8730-41ef-82b6-2f0cba44f895.png",
-    price: "€5.49",
-    description: "Rich Dark Lager"
+    image: "/lovable-uploads/photo_10_2025-01-26_15-56-11.jpg",
+    price: "10 500 so'm",
+    description: "Богатое темное пиво"
   },
   {
     name: "Zlata Praha Fruit Mix",
-    image: "/lovable-uploads/3e56b4de-1186-4e76-91a5-f3edcd5ca952.png",
-    price: "€6.99",
-    description: "Tropical Fruit-Infused Beer"
+    image: "/lovable-uploads/photo_12_2025-01-26_15-56-11.jpg",
+    price: "13 000 so'm",
+    description: "Пиво с фруктовым миксом из ананаса"
   },
   {
     name: "Samarkand Special",
-    image: "/lovable-uploads/c4fc5405-073f-4c80-8f13-3d7c6613c270.png",
-    price: "€7.99",
-    description: "Oriental-Inspired Premium Brew"
+    image: "/lovable-uploads/photo_17_2025-01-26_15-56-11.jpg",
+    price: "",
+    description: "Премиум-напиток в восточном стиле"
   },
   {
     name: "Zlata Praha Apple",
-    image: "/lovable-uploads/3e277e33-5bec-4c60-8334-e6b6ad7e3b30.png",
-    price: "€5.99",
-    description: "Apple-Infused Light Beer"
+    image: "/lovable-uploads/photo_18_2025-01-26_15-56-11.jpg",
+    price: "12 00 so'm",
+    description: "Регенстанский сад"
   },
   {
     name: "Zlata Praha Original",
-    image: "/lovable-uploads/51658791-8693-4df6-8bc3-ec3c59d06874.png",
-    price: "€4.99",
-    description: "Traditional Czech Recipe"
+    image: "/lovable-uploads/photo_19_2025-01-26_15-56-11.jpg",
+    price: "12 200 so'm",
+    description: "Традиционный чешский рецепт"
   },
   {
     name: "Zlata Praha Heritage",
-    image: "/lovable-uploads/9ab96122-2703-418d-a9c2-d00b213ba9b9.png",
+    image: "/lovable-uploads/photo_1_2025-01-26_15-56-11.jpg",
     price: "€6.99",
-    description: "Limited Edition Prague Collection"
+    description: "Ограниченная коллекция Пражская коллекция"
   },
   {
     name: "Zlata Praha Rift",
-    image: "/lovable-uploads/6ec13245-7810-49c2-b0d7-6d84bd498527.png",
+    image: "/lovable-uploads/25cbab06-aea9-4069-a47c-2dfa09481209.png",
     price: "€6.99",
-    description: "Fruit-Infused Special Edition"
+    description: "Особое издание с фруктовым вкусом"
   },
   {
     name: "Zlata Praha Collection",
-    image: "/lovable-uploads/8d132d6c-4416-408e-90dd-06e466725c0f.png",
-    price: "€24.99",
-    description: "Premium Beer Collection Set"
+    image: "/lovable-uploads/9776da23-499d-4a35-9364-12051ba74e72.png",
+    price: "",
+    description: "Набор премиум-пива"
   },
   {
     name: "Zlata Praha Classic",
-    image: "/lovable-uploads/a86b0122-b5cf-494a-8d7b-75f294f0450c.png",
-    price: "€4.99",
-    description: "Classic Czech Beer"
-  }
+    image: "/lovable-uploads/aea943cc-456f-4ae5-aee5-06ef77efb8e7.png",
+    price: "13 000 so'm",
+    description: "Пиво с тропическим фруктовым вкусом"
+  },
+  {
+    name: "Zlata Praha Classic",
+    image: "/lovable-uploads/photo_3_2025-01-26_16-58-06.jpg",
+    price: "2 200 so'm",
+    description: "Тархун"
+  },
+  {
+    name: "Zlata Praha Classic",
+    image: "/lovable-uploads/photo_5_2025-01-26_16-58-06.jpg",
+    price: "8 200 so'm",
+    description: "Квас"
+  },
+
 ];
+
 
 const Shop = () => {
   return (
