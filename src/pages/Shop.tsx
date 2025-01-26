@@ -86,8 +86,6 @@ const products = [
   },
 
 ];
-
-
 const Shop = () => {
   return (
     <div className="min-h-screen bg-darkBg pt-20 pb-24">
