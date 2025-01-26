@@ -2,55 +2,55 @@ import { ProductCard } from "@/components/ProductCard";
 const products = [
   {
     name: "Zlata Praha Premium",
-    image: "/lovable-uploads/photo_2_2025-01-26_15-56-11.jpg",
+    image: "/lovable-uploads/photo_2_2025-01-26_15-56-11.png",
     price: "13 000 so'm",
     description: "Легкое пиво с яблочным вкусом"
   },
   {
     name: "Zlata Praha Gold",
-    image: "/lovable-uploads/photo_4_2025-01-26_15-56-11.jpg",
+    image: "/lovable-uploads/photo_4_2025-01-26_15-56-11.png",
     price: "13 000 so'm",
     description: "Особое издание с вишневым вкусом"
   },
   {
     name: "Zlata Praha Cherry",
-    image: "/lovable-uploads/photo_9_2025-01-26_15-56-11.jpg",
+    image: "/lovable-uploads/photo_9_2025-01-26_15-56-11.png",
     price: "12 200 so'm",
     description: "Самарканд"
   },
   {
     name: "Zlata Praha Dark",
-    image: "/lovable-uploads/photo_10_2025-01-26_15-56-11.jpg",
+    image: "/lovable-uploads/photo_10_2025-01-26_15-56-11.png",
     price: "10 500 so'm",
     description: "Богатое темное пиво"
   },
   {
     name: "Zlata Praha Fruit Mix",
-    image: "/lovable-uploads/photo_12_2025-01-26_15-56-11.jpg",
+    image: "/lovable-uploads/photo_12_2025-01-26_15-56-11.png",
     price: "13 000 so'm",
     description: "Пиво с фруктовым миксом из ананаса"
   },
   {
     name: "Samarkand Special",
-    image: "/lovable-uploads/photo_17_2025-01-26_15-56-11.jpg",
+    image: "/lovable-uploads/photo_17_2025-01-26_15-56-11.png",
     price: "",
     description: "Премиум-напиток в восточном стиле"
   },
   {
     name: "Zlata Praha Apple",
-    image: "/lovable-uploads/photo_18_2025-01-26_15-56-11.jpg",
+    image: "/lovable-uploads/photo_18_2025-01-26_15-56-11.png",
     price: "12 00 so'm",
     description: "Регенстанский сад"
   },
   {
     name: "Zlata Praha Original",
-    image: "/lovable-uploads/photo_19_2025-01-26_15-56-11.jpg",
+    image: "/lovable-uploads/photo_19_2025-01-26_15-56-11.png",
     price: "12 200 so'm",
     description: "Традиционный чешский рецепт"
   },
   {
     name: "Zlata Praha Heritage",
-    image: "/lovable-uploads/photo_1_2025-01-26_15-56-11.jpg",
+    image: "/lovable-uploads/photo_1_2025-01-26_15-56-11.png",
     price: "€6.99",
     description: "Ограниченная коллекция Пражская коллекция"
   },
@@ -74,13 +74,13 @@ const products = [
   },
   {
     name: "Zlata Praha Classic",
-    image: "/lovable-uploads/photo_3_2025-01-26_16-58-06.jpg",
+    image: "/lovable-uploads/photo_3_2025-01-26_16-58-06.png",
     price: "2 200 so'm",
     description: "Тархун"
   },
   {
     name: "Zlata Praha Classic",
-    image: "/lovable-uploads/photo_5_2025-01-26_16-58-06.jpg",
+    image: "/lovable-uploads/photo_5_2025-01-26_16-58-06.png",
     price: "8 200 so'm",
     description: "Квас"
   },
